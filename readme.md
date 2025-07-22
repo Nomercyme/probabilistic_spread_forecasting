@@ -1,5 +1,39 @@
 ## Folder Structure
-<pre><code>ml_project/ │ ├── data/ # Raw and processed datasets │ ├── raw/ # Untouched, original data files │ └── processed/ # Cleaned and transformed data │ ├── notebooks/ # Exploratory notebooks (EDA, prototyping) │ ├── src/ # Main source code │ ├── __init__.py │ ├── config/ # Config files and environment variables │ │ ├── paths.py │ │ └── model_config.py │ │ │ ├── data/ # Data loading and preprocessing │ │ ├── load_data.py │ │ └── preprocess.py │ │ │ ├── features/ # Feature engineering │ │ ├── build_features.py │ │ └── fourier_features.py │ │ │ ├── models/ # Model training, evaluation, prediction │ │ ├── train_model.py │ │ ├── evaluate.py │ │ └── predict.py │ │ │ ├── utils/ # Helper functions (logging, metrics, plots) │ │ ├── logger.py │ │ └── visualization.py │ │ │ └── main.py # Entry point of the ML pipeline │ ├── tests/ # Unit tests for each module │ ├── test_data.py │ └── test_models.py │ ├── outputs/ # Generated files │ ├── models/ # Trained model files │ ├── reports/ # Evaluation reports or figures │ └── logs/ # Logs from training, errors, etc. │ ├── requirements.txt # Python dependencies ├── pyproject.toml # Modern project metadata and config ├── .env # Environment-specific variables └── README.md # Project overview and instructions </code></pre>
+```bash
+probabilistic_spread_forecasting/
+├── data/                    # Raw and processed datasets
+│   ├── raw/                 # Untouched, original data files
+│   └── processed/           # Cleaned and transformed data
+│
+├── notebooks/               # Exploratory notebooks (EDA, prototyping, experimenting)
+│
+├── src/                     # Main source code
+│   ├── __init__.py
+│   ├── config/              # Config files and environment variables
+│   │
+│   ├── data/                # Data loading and preprocessing
+│   │
+│   ├── features/            # Feature engineering
+│   │
+│   ├── models/              # Model training, evaluation, prediction
+│   │
+│   ├── utils/               # Helper functions (logging, metrics, plots)
+│   │
+│   └── main.py              # Entry point of the ML pipeline
+│
+├── tests/                   # Unit tests for each module
+│
+├── outputs/                 # Generated files
+│   ├── models/              # Trained model files
+│   ├── reports/             # Evaluation reports or figures
+│   └── logs/                # Logs from training, errors, etc.
+│
+├── requirements.txt         # Python dependencies
+├── pyproject.toml           # Modern project metadata and config
+├── .env                     # Environment-specific variables
+└── README.md                # Project overview and instructions
+```
+
 
 ## Way of working with uv
 1. Create a new project directory and enter it.
