@@ -9,4 +9,5 @@ dependencies = [
     "matplotlib>=3.10.3",
     "numpy>=2.3.1",
     "pandas>=2.3.1",
+    "ydata-profiling",
 ]
