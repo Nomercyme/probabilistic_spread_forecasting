@@ -44,3 +44,7 @@ probabilistic_spread_forecasting/
 6. Commit `pyproject.toml` and `uv.lock` to git.
 7. Others can clone the repo, run `uv venv`, activate the environment and `uv sync` to get the same environment.
 
+## Resources used
+1. Benchmark different FE techniques: https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html#sphx-glr-auto-examples-applications-plot-cyclical-feature-engineering-py
+
+
